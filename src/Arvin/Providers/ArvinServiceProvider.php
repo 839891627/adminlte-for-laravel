@@ -15,8 +15,9 @@ class ArvinServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'arvin');
         $this->publishes([
+            __DIR__ . '/../../config/admin.php' => config_path('admin.php'),
             __DIR__ . '/../../resources/views' => base_path('resources/views/vendor/arvin'),
-            __DIR__ . '/../../public/css' => public_path('vendor/arvin'),
+            __DIR__ . '/../../public' => public_path('vendor/arvin'),
         ]);
     }
 

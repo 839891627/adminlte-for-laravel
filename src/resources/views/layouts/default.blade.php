@@ -8,9 +8,15 @@
     <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="http://cdn.bootcss.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('vendor/arvin/skins/_all-skins.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('vendor/arvin/AdminLTE.min.css') }}">
-    <title>@yield('title', '')</title>
+    <link rel="stylesheet" href="{{ asset('vendor/arvin/css/skins/_all-skins.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendor/arvin/css/AdminLTE.min.css') }}">
+    <title>{{ config('admin.site_title') }}</title>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 
@@ -23,12 +29,12 @@
     <div class="content-wrapper">
         <section class="content-header">
             <h1>
-                @yield('page_title')
+                @yield('page_title', 'page_title')
             </h1>
-            {{--<ol class="breadcrumb">--}}
-            {{--<li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>--}}
-            {{--<li class="active">Here</li>--}}
-            {{--</ol>--}}
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+                <li class="active">Here</li>
+            </ol>
         </section>
 
         <!-- Main content -->
@@ -48,7 +54,7 @@
 
 <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
 <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-{{--<script src="{{ asset('js/app.js') }}"></script>--}}
+<script src="{{ asset('vendor/arvin/js/admin.min.js') }}"></script>
 @yield('js')
 </body>
 </html>
