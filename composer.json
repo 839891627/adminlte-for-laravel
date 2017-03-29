@@ -9,6 +9,8 @@
     ],
     "require": {},
     "autoload": {
-        "Arvin\\Admin\\": "packages/arvin/admin/src/Arvin/"
+        "psr-4": {
+            "Arvin\\Admin\\": "src/"
+        }
     }
 }
