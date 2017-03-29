@@ -1,0 +1,14 @@
+{
+    "name": "arvin/adminlte-for-laravel",
+    "description": "adminlte for laravel",
+    "authors": [
+        {
+            "name": "arvin",
+            "email": "arvin.cao@sunallies.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "Arvin\\Admin\\": "packages/arvin/admin/src/Arvin/"
+    }
+}
