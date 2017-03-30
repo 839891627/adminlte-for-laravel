@@ -18,5 +18,14 @@
 | 参数 | 说明 |
 |:---|:---|
 |SITE_TITLE|网站标题|
+### 使用
+1. 模板：
+```php
+@extends('arvin::layouts.default')
+@section('content')
+    这里是 页面内容
+@stop
+
+```
  
  
