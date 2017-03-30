@@ -10,7 +10,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Arvin\\Admin\\": "src/"
+            "Arvin\\Admin\\": "src/Arvin/"
         }
     }
 }
