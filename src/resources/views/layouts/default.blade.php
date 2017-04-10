@@ -10,7 +10,7 @@
     <link href="http://cdn.bootcss.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('vendor/arvin/css/skins/_all-skins.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/arvin/css/AdminLTE.min.css') }}">
-    <title>{{ config('admin.site_title') }}</title>
+    <title>{{ config('admin.site_name') }}</title>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,7 +18,7 @@
     <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition {{ config('admin.skin') }} {{ config('admin.layout') }}">
 
 <div class="wrapper">
 
